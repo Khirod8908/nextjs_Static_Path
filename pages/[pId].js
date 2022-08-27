@@ -1,5 +1,6 @@
 import Link from 'next/link';
 export default function Home({ data }) {
+  console.log(data);
   return (
     <div>
       <Link href="/">Back</Link>
