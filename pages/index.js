@@ -1,4 +1,3 @@
-import styles from '../styles/Home.module.css';
 import Link from 'next/link';
 import Header from '../components/header/Header';
 
@@ -10,7 +9,7 @@ export default function Home({ data }) {
     gap: '1.5rem',
   };
   return (
-    <div className={styles.container}>
+    <div>
       <Header />
       <h1>Hello world!</h1>
       {data.map((e, i) => {
