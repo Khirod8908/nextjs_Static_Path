@@ -1,5 +1,6 @@
 import styles from '../styles/Home.module.css';
 import Link from 'next/link';
+import Header from '../components/header/Header';
 
 export default function Home({ data }) {
   console.log(data.length);
@@ -10,6 +11,7 @@ export default function Home({ data }) {
   };
   return (
     <div className={styles.container}>
+      <Header />
       <h1>Hello world!</h1>
       {data.map((e, i) => {
         return (
