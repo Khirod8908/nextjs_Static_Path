@@ -1,0 +1,14 @@
+.search_box {
+  position: absolute;
+  top: 0;
+  height: 6rem;
+  display: flex;
+  align-items: center;
+  background-color: rgba(22, 28, 36, 0.7);
+  backdrop-filter: blur(6px);
+  box-shadow: rgb(0 0 0 / 10%) -8px 8px 24px -4px;
+  z-index: 2;
+}
+.search_box li {
+  cursor: pointer;
+}

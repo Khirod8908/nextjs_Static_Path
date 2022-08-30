@@ -3,7 +3,7 @@
   width: 2rem;
   display: flex;
   justify-content: flex-end;
-  z-index: 1000;
+  z-index: 1;
   position: relative;
 }
 
@@ -29,7 +29,7 @@
 .option {
   cursor: pointer;
   color: var(--white);
-  background-color: var(--black-600);
+  /* background-color: var(--black-600); */
   padding: 0.5rem 0.875rem;
   border-radius: var(--round-border);
 }

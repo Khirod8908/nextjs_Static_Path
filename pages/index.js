@@ -1,33 +1,31 @@
 import Link from 'next/link';
 import Header from '../components/header/Header';
-import SearchBox from '../components/searchbox/SearchBox';
 
-export default function Home({ data }) {
-  console.log(data.length);
-  const style = {
-    display: 'flex',
-    alignItems: 'center',
-    gap: '1.5rem',
-  };
+export default function Home() {
+  // console.log(data.length);
+  // const style = {
+  //   display: 'flex',
+  //   alignItems: 'center',
+  //   gap: '1.5rem',
+  // };
   return (
     <div>
       <Header />
-      <h1>Hello world!</h1>
-      {data.map((e, i) => {
+      <h1>Hello world!</h1>     
+      {/* {data.map((e, i) => {
         return (
           <div style={style}>
             <p key={i}>{e.name}</p>
             <Link href={`/${e.id}`}>View More</Link>
           </div>
         );
-      })}
-      <SearchBox />
+      })} */}
     </div>
   );
 }
 
-export async function getStaticProps() {
-  const res = await fetch('https://jsonplaceholder.typicode.com/users');
-  const data = await res.json();
-  return { props: { data } };
-}
+// export async function getStaticProps() {
+//   const res = await fetch('https://jsonplaceholder.typicode.com/users');
+//   const data = await res.json();
+//   return { props: { data } };
+// }

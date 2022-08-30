@@ -1,9 +1,8 @@
 export default (props) => {
   const style = {
-    width: '100%',
-    height: '100%',
-    backdroundColor: 'black',
-    opacity: '0.5',
+    width: '100vw',
+    height: '100vh',
+    backdroundColor: 'white',
   };
   return <div style={style}>{props.children}</div>;
 };
