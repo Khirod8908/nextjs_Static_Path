@@ -1,0 +1,17 @@
+.header {
+  border-bottom: 1px solid var(--tx-color);
+  padding: 1rem 0.5rem;
+}
+
+.header > * {
+  color: var(--tx-color);
+}
+
+.header .nav_links {
+  gap: 0.875rem;
+  margin-right: auto;
+}
+
+.header .nav_links > * {
+  color: var(--tx-color);
+}
