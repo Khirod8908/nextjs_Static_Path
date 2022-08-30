@@ -3,15 +3,17 @@
   padding: 1rem 0.5rem;
 }
 
-.header > * {
-  color: var(--tx-color);
-}
-
 .header .nav_links {
-  gap: 0.875rem;
+  gap: 3rem;
   margin-right: auto;
 }
 
 .header .nav_links > * {
   color: var(--tx-color);
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.header .nav_links > *:hover {
+  opacity: 0.8;
 }
