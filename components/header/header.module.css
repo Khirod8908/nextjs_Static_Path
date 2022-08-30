@@ -1,6 +1,5 @@
 .header {
-  border-bottom: 1px solid var(--tx-color);
-  padding: 1rem 0.5rem;
+  padding: 1.5rem 0.5rem;
 }
 
 .header .nav_links {
@@ -16,4 +15,21 @@
 
 .header .nav_links > *:hover {
   opacity: 0.8;
+}
+
+.header .icon_button {
+  gap: 1.5rem;
+}
+.header .devider {
+  background-color: var(--secondary-color);
+  width: 1px;
+  height: 1.5rem;
+}
+
+/* .header .icon_button :nth-child(1) {
+  gap: 2rem;
+} */
+
+.header .icon_button :nth-child(3) {
+  gap: 1rem;
 }

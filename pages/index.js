@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import Header from '../components/header/Header';
+import SearchBox from '../components/searchbox/SearchBox';
 
 export default function Home({ data }) {
   console.log(data.length);
@@ -20,6 +21,7 @@ export default function Home({ data }) {
           </div>
         );
       })}
+      <SearchBox />
     </div>
   );
 }

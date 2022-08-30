@@ -16,6 +16,13 @@
   --white: #ffffff;
   --tx-color: #919eab;
   --blue: #22b8cf;
+
+  --black-900: #222c39;
+  --black-800: #212b36;
+  --black-700: #29343f;
+  --black-600: #2f3944;
+
+  --round-border: 0.4rem;
 }
 
 html,
@@ -37,4 +44,26 @@ a {
 
 li {
   list-style: none;
+}
+
+.icon {
+  font-size: 1.3rem;
+  color: var(--white);
+  width: 1.8rem;
+  height: 1.8rem;
+  background-color: transparent;
+  padding: 0.3rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: scale 0.35s ease;
+}
+
+.icon:hover,
+.icon:focus {
+  background-color: var(--black-900);
+  transform: scale(1.1);
 }

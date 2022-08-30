@@ -1,5 +1,10 @@
 import classes from './header.module.css';
 import Link from 'next/link';
+
+import { BiSearch, BiGlobe } from 'react-icons/bi';
+import Button, { BtnOutline } from '../../UI/Buttons/Button';
+import DropDown from '../dropdown/Dropdown';
+
 export default () => {
   return (
     <header className={`container-fluid ${classes.header}`}>
@@ -13,7 +18,17 @@ export default () => {
           <Link href="/">About Us</Link>
           <Link href="/">Contact Us</Link>
         </ul>
-        <div className="icon">icons</div>
+        <div className={`d-flex align-items-center ${classes.icon_button}`}>
+          <div className="d-flex align-items-center icons">
+            <BiSearch className={`icon me-5 ${classes.search}`} />
+            <DropDown />
+          </div>
+          <div className={classes.devider}></div>
+          <div className="d-flex align-items-center buttons">
+            <BtnOutline>Log in</BtnOutline>
+            <Button>Sign up</Button>
+          </div>
+        </div>
       </nav>
     </header>
   );

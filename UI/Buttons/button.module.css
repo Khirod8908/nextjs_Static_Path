@@ -1,0 +1,27 @@
+.btn_fill {
+  border: none;
+  outline: none;
+  background-color: var(--primary-color);
+  padding: 0.4rem 1rem;
+  border-radius: var(--round-border);
+  font-weight: 500;
+  color: var(--white);
+}
+
+.btn_outline {
+  border: 1px solid var(--secondary-color);
+  outline: none;
+  background-color: transparent;
+  padding: 0.4rem 1rem;
+  border-radius: var(--round-border);
+  font-weight: 500;
+  color: var(--white);
+  transition: 0.35s ease;
+}
+
+.btn_outline:hover {
+  border: 1px solid var(--white);
+}
+.btn_outline:focus {
+  background-color: var(--black-600);
+}
