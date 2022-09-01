@@ -6,7 +6,6 @@ import { BiSearch, BiMenu, BiX } from 'react-icons/bi';
 import Button, { BtnOutline } from '../../UI/Buttons/Button';
 import DropDown from '../dropdown/Dropdown';
 import SearchBox from '../searchbox/SearchBox';
-import Backdrop from '../../UI/Backdrop/Backdrop';
 
 export default () => {
   const [searchBox, showSearchBox] = useState(false);

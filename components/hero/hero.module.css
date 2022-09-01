@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600;700&display=swap');
+.hero_info {
+  border: 1px solid white;
+}
+
+.hero_info h1 {
+  font-family: 'Barlow', sans-serif !important;
+  font-size: var(--title);
+  color: var(--white);
+}

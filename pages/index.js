@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import Header from '../components/header/Header';
+import Hero from '../components/hero/Hero';
 
 export default function Home() {
   // console.log(data.length);
@@ -10,8 +10,8 @@ export default function Home() {
   // };
   return (
     <div>
-      <Header />
-      <h1>Hello world!</h1>     
+      <h1>Hello world!</h1>
+      <Hero />
       {/* {data.map((e, i) => {
         return (
           <div style={style}>

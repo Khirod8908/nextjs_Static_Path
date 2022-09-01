@@ -23,6 +23,9 @@
   --black-600: #2f3944;
 
   --round-border: 0.4rem;
+
+  --title: 64px;
+  --caption: 14px;
 }
 
 html,
@@ -40,6 +43,7 @@ body {
 a {
   color: inherit;
   text-decoration: none !important;
+  font-size: var(--caption);
 }
 
 li {
