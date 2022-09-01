@@ -21,6 +21,7 @@
 .hero_info .hero_para {
   color: var(--tx-color);
   margin-top: 2rem;
+  max-width: 80%;
 }
 
 .hero_info .info_buttons {
@@ -52,8 +53,10 @@
     font-size: var(--heading);
   }
 
-  .hero_info p {
+  .hero_info .hero_para {
     text-align: center;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .hero_info .info_buttons {

@@ -40,7 +40,7 @@ export default () => {
               className={`d-flex align-items-center mb-0 show_menu ${classes.nav_links}`}
             >
               <Link href="/">Home</Link>
-              <li>Categories</li>
+              <Link href="/">Categories</Link>
               <Link href="/">About Us</Link>
               <Link href="/">Contact Us</Link>
               <BiX

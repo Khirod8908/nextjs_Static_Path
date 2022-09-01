@@ -61,7 +61,7 @@
     background-color: rgba(22, 28, 36, 0.5);
     z-index: 5;
     display: none;
-    transition: 0.5s ease-in-out;
+    transition: left 0.5s ease-in-out;
   }
   .header .nav_links {
     position: relative;
@@ -77,7 +77,7 @@
     background-color: var(--black-800);
     gap: 2rem;
     z-index: 5;
-    transition: 0.5s ease-in-out;
+    transition: left 0.5s ease-in-out;
   }
   .header .nav_links > * {
     font-size: 0.875rem;
