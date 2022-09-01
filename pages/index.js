@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import FeatureCategories from '../components/featureCategories/FeatureCategories';
 import Hero from '../components/hero/Hero';
 
 export default function Home() {
@@ -12,6 +13,7 @@ export default function Home() {
     <div>
       <h1>Hello world!</h1>
       <Hero />
+      <FeatureCategories />
       {/* {data.map((e, i) => {
         return (
           <div style={style}>

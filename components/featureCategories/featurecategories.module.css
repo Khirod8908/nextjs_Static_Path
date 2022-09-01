@@ -1,0 +1,12 @@
+.featureCat_info .subtitle {
+  color: var(--white);
+  font-size: var(--heading);
+  font-family: 'Barlow', sans-serif !important;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.featureCat_info .para {
+  color: var(--tx-color);
+  margin-bottom: 3rem;
+}
