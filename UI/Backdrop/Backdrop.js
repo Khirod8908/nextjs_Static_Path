@@ -1,8 +1,4 @@
+import classes from './backdrop.module.css';
 export default (props) => {
-  const style = {
-    width: '100vw',
-    height: '100vh',
-    backdroundColor: 'white',
-  };
-  return <div style={style}>{props.children}</div>;
+  return <div id={classes.back_drop}>{props.children}</div>;
 };

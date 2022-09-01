@@ -4,9 +4,6 @@ import { useState, useRef, useEffect } from 'react';
 import { ReactSearchAutocomplete } from 'react-search-autocomplete';
 
 export default () => {
-  const [searchBox, hideSearchBox] = useState('');
-  const wrapperRef = useRef(null);
-  useOutsideAlerter(wrapperRef);
   const items = [
     {
       id: 0,
@@ -38,25 +35,8 @@ export default () => {
     );
   };
 
-  function useOutsideAlerter(ref) {
-    useEffect(() => {
-      function handleClickOutside(event) {
-        if (ref.current && !ref.current.contains(event.target)) {
-          hideSearchBox('hideSearchBox');
-        }
-      }
-
-      document.addEventListener('mousedown', handleClickOutside);
-      return () => {
-        document.removeEventListener('mousedown', handleClickOutside);
-      };
-    }, [ref]);
-  }
   return (
-    <div
-      className={`container-fluid ${classes.search_box} ${searchBox}`}
-      ref={wrapperRef}
-    >
+    <div className={`container-fluid ${classes.search_box}`}>
       <div className="container">
         <ReactSearchAutocomplete
           items={items}
