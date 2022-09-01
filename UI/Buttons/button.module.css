@@ -1,3 +1,4 @@
+/* button fill */
 .btn_fill {
   border: none;
   outline: none;
@@ -8,6 +9,30 @@
   color: var(--white);
 }
 
+/* button large */
+.btn_lg {
+  border: none;
+  outline: none;
+  background-color: var(--primary-color);
+  padding: 0.7rem 1.5rem;
+  height: 3rem;
+  border-radius: var(--round-border);
+  font-weight: 500;
+  color: var(--white);
+}
+
+.btn_lg_round {
+  border: none;
+  outline: none;
+  background-color: var(--blue);
+  width: 3rem;
+  aspect-ratio: 1 / 1;
+  font-weight: 500;
+  color: var(--white);
+  border-radius: 50%;
+}
+
+/* button outline */
 .btn_outline {
   border: 1px solid var(--secondary-color);
   outline: none;

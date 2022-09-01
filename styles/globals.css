@@ -24,8 +24,9 @@
 
   --round-border: 0.4rem;
 
-  --title: 64px;
-  --caption: 14px;
+  --title: 4rem;
+  --heading: 3rem;
+  --caption: 0.875rem;
 }
 
 html,
@@ -44,6 +45,10 @@ a {
   color: inherit;
   text-decoration: none !important;
   font-size: var(--caption);
+}
+
+p {
+  line-height: 2;
 }
 
 li {
@@ -74,4 +79,8 @@ li {
 
 .hide_moduel {
   display: none !important;
+}
+
+.btn_icon {
+  font-size: 1.3rem;
 }

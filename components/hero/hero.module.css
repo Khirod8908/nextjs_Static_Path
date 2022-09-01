@@ -1,10 +1,76 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600;700&display=swap');
-.hero_info {
-  border: 1px solid white;
-}
 
-.hero_info h1 {
+.hero_info h1,
+.hero_info span {
   font-family: 'Barlow', sans-serif !important;
   font-size: var(--title);
   color: var(--white);
+  font-weight: 700;
+  letter-spacing: 1px;
+  line-height: 1.25;
+}
+
+.hero_info h1 span:nth-child(1) {
+  color: var(--tx-color);
+}
+.hero_info h1 span:nth-last-child(2) {
+  color: var(--primary-color);
+  text-decoration: underline;
+}
+
+.hero_info .hero_para {
+  color: var(--tx-color);
+  margin-top: 2rem;
+}
+
+.hero_info .info_buttons {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  color: var(--white);
+}
+
+.hero_info .devider {
+  width: 100%;
+  border-top: 1px dashed var(--black-600);
+  margin: 2rem 0;
+}
+
+.video_btn {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+@media only screen and (max-width: 991px) {
+  .hero_info h1 {
+    text-align: center;
+    font-size: var(--heading);
+  }
+
+  .hero_info h1 > * {
+    font-size: var(--heading);
+  }
+
+  .hero_info p {
+    text-align: center;
+  }
+
+  .hero_info .info_buttons {
+    justify-content: center;
+  }
+
+  .hero_info h1 br:nth-child(2) {
+    display: none !important;
+  }
+
+  .hero_image {
+    display: none !important;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .hero_info .info_buttons {
+    flex-direction: column;
+  }
 }
