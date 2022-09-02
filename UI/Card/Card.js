@@ -1,7 +1,7 @@
-export default() =>{
+export default(props) =>{
   return(
-    <li>
-      
-    </li>
+    <div>
+      {props.children}
+    </div>
   )
 }
