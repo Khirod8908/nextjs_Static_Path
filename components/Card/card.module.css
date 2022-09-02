@@ -1,0 +1,5 @@
+.card {
+  border-radius: var(--lg-round-border);
+  padding: 1rem;
+  border: 1px solid var(--black-600);
+}
