@@ -1,0 +1,21 @@
+.tabs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tabs button {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  padding: 0.5rem 2rem;
+  border-radius: var(--round-border);
+  font-weight: 400;
+  color: var(--tx-color);
+  transition: 0.35s ease;
+}
+
+.tabs button.activeTab {
+  background-color: var(--black-800);
+  color: var(--white);
+}

@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@500;600;700&display=swap');
 
 * {
   padding: 0;
@@ -25,6 +25,9 @@
   --black-600: #2f3944;
 
   --round-border: 0.4rem;
+  --lg-round-border: 0.725rem;
+
+  --box-shadow: -24px 24px 72px -8px rgba(0, 0, 0, 0.24);
 
   --title: 4rem;
   --heading: 3rem;
@@ -85,4 +88,20 @@ li {
 
 .btn_icon {
   font-size: 1.3rem;
+}
+
+.nav-tabs li:hover {
+  border: none !important;
+}
+
+.nav-tabs button.active {
+  background-color: var(--black-600) !important;
+  color: var(--white) !important;
+  border: none;
+  border-radius: var(--lg-round-border);
+}
+
+.nav-tabs button:hover {
+  border: none !important;
+  color: var(--white) !important;
 }

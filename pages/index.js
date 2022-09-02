@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Courses from '../components/courses/Courses';
 import FeatureCategories from '../components/featureCategories/FeatureCategories';
 import Hero from '../components/hero/Hero';
 
@@ -14,6 +15,7 @@ export default function Home() {
       <h1>Hello world!</h1>
       <Hero />
       <FeatureCategories />
+      <Courses />
       {/* {data.map((e, i) => {
         return (
           <div style={style}>

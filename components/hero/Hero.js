@@ -20,7 +20,7 @@ export default () => {
             Etiam sollicitudin, ipsum eu pulvinar rutrum, tellus ipsum laoreet
             sapien, quis venenatis ante odio sit amet eros.
           </p>
-          <div className={`mt-5 ${classes.info_buttons}`}>
+          <div className={`${classes.info_buttons}`}>
             <BtnLg>
               Reddy Start <BiChevronRight className="btn_icon" />
             </BtnLg>
