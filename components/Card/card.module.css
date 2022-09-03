@@ -3,3 +3,56 @@
   padding: 1rem;
   border: 1px solid var(--black-600);
 }
+
+.devider {
+  background-color: var(--black-600);
+  width: 1px;
+  height: 1.5rem;
+}
+
+.card_info {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.725rem;
+}
+
+.card_info .rating > * {
+  font-family: 'Barlow', sans-serif;
+}
+
+.card_info .rating {
+  color: var(--white);
+  gap: 0.5rem;
+  font-size: var(--body);
+}
+
+.card_info .rating span {
+  font-size: var(--caption);
+  color: var(--tx-color);
+}
+.card_info .rating svg {
+  color: var(--rating) !important;
+}
+
+.card_info p {
+  color: var(--white);
+  font-family: 'Barlow', sans-serif;
+  font-size: var(--body);
+  line-height: 1.5;
+  margin-bottom: 0;
+}
+
+.card_info .course_info {
+  color: var(--tx-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: var(--caption);
+}
+
+.card_info .course_info span {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}

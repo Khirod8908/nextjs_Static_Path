@@ -24,6 +24,8 @@
   --black-700: #29343f;
   --black-600: #2f3944;
 
+  --rating: #ffc81a;
+
   --round-border: 0.4rem;
   --lg-round-border: 0.725rem;
 
@@ -31,6 +33,7 @@
 
   --title: 4rem;
   --heading: 3rem;
+  --body: 1.125rem;
   --caption: 0.875rem;
 }
 

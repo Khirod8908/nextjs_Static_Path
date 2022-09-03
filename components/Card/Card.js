@@ -1,7 +1,8 @@
 import Image from 'next/image';
 import classes from './card.module.css';
 
-import { BsStarFill } from 'react-icons/bs';
+import { BsStarFill, BsBarChart, BsFileEarmarkText } from 'react-icons/bs';
+import { IoMdTime } from 'react-icons/io';
 
 export default () => {
   return (
@@ -16,13 +17,37 @@ export default () => {
           loading="lazy"
         />
       </div>
-      <div className="card_info">
-        <div className={classes.rating}>
-          <BsStarFill /> 4.8 (1089)
+      <div className={classes.card_info}>
+        <div className={`d-flex align-items-center ${classes.rating}`}>
+          <div className="d-flex align-items-center">
+            <BsStarFill className="icon" />
+            4.8
+          </div>
+          <div className={classes.devider}></div>
+          <span> (1089)</span>
         </div>
         <p>Learn Figma - UI/UX Design Essential Training</p>
+        <div className={classes.course_info}>
+          <span>
+            <BsFileEarmarkText /> 6 lesson
+          </span>
+          <span>
+            <IoMdTime />
+            3h 56m
+          </span>
+          <span>
+            <BsBarChart />
+            Beginner
+          </span>
+        </div>
         <div className={classes.price}>
-          $48 <span className={classes.dis_price}></span>
+          <span className={classes.dis_price}>$56</span> $48
+        </div>
+        <div className={classes.creator}>
+          <div className={classes.profile_img}>
+            
+          </div>
+          <span>Jose Portila</span>
         </div>
       </div>
     </div>
