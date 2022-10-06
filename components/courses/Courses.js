@@ -18,11 +18,9 @@ export default (props) => {
           <Card />
         </Tab>
         <Tab title="Tab2">
-          <Card />
+          <p>tab3</p>
         </Tab>
-        <Tab title="Tab3">
-          <Card />
-        </Tab>
+        <Tab title="Tab3">tab3</Tab>
       </Tabs>
     </section>
   );

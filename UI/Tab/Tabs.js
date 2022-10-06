@@ -3,13 +3,13 @@ const Tabs = ({ active, onChange, children }) => {
   return (
     <>
       <div className={classes.tabs}>
-        {children.map((c, index) => (
+        {children.map((e, index) => (
           <button
             onClick={() => onChange(index)}
             className={active === index ? classes.activeTab : ''}
             key={index}
           >
-            {c.props.title}
+            {e.props.title}
           </button>
         ))}
       </div>
